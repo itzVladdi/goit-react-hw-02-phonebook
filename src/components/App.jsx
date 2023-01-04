@@ -45,9 +45,13 @@ export class App extends Component {
     const filterContacts = this.handleFilterContacts();
     return (
       <>
-        <h1 style={{ textAlign: 'center' }}>Phonebook</h1>
+        <h1 style={{ textAlign: 'center', margin: '10px 0 10px 0' }}>
+          Phonebook
+        </h1>
         <ContactForm handleSubmit={this.handleSubmit} />
-        <h2 style={{ textAlign: 'center' }}>Contacts</h2>
+        <h2 style={{ textAlign: 'center', margin: '10px 0 10px 0' }}>
+          Contacts
+        </h2>
         <Filter filter={filter} handleChange={this.handleChange} />
         <ContactList
           filterContacts={filterContacts}
